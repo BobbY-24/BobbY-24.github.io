@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Bob Yan</title>
+  <meta name="description" content="About Bob Yan: Georgia Tech ISyE, the Webb School, cross-country, and a shelf of books.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/about.html">
+  <meta property="og:title" content="About — Bob Yan">
+  <meta property="og:description" content="Georgia Tech, the Webb School, cross-country, and the shelf.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://bobby-24.github.io/about.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="research.html">Research</a>
+        <a href="about.html" aria-current="page">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening">
+        <div class="prose">
+          <p class="eyebrow">About</p>
+          <h1>Optimization, language, and a measurement you can defend.</h1>
+          <p class="lede">I am an undergraduate in Industrial and Systems Engineering at Georgia Tech, with a Computer Science minor on the Intelligence thread.</p>
+          <p>The through-line is using statistical rigor and algorithmic thinking on problems that do not sit still: operations, language, and systems where efficiency, fairness, and automation are all in play. Recent work is in natural language processing, especially emerging language and the evaluation of large language models. I am looking toward machine learning engineering, AI research, and applied data science, and I am glad to talk.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="school-title">
+        <h2 id="school-title">School</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when"><strong>Georgia Tech</strong> In progress</div>
+            <div>
+              <h3>Industrial Engineering</h3>
+              <p>Advanced studies in operations research and statistics. Grade 4.0. Research assistant in the College of Computing, and Data Science @ GT. Computer Science minor, Intelligence thread.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>The Webb School</strong> Diploma</div>
+            <div>
+              <h3>High school</h3>
+              <p>Senior class president. Cum Laude Society in 11th and 12th grade. Multivariable Calculus Award in 11th grade. Four years of varsity cross-country. Chambliss Prefect in junior and senior year. Old Guard.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="shelf-title">
+        <h2 id="shelf-title">Shelf</h2>
+        <ul class="shelf">
+          <li><strong>Elementary</strong> <span lang="zh">朝花夕拾</span></li>
+          <li><strong>Sixth grade</strong> <span>A Boy’s Life. <span lang="zh">东野圭吾：《解忧杂货店》《放学后》《美丽的凶器》. 加贺恭一郎：《毕业》《麒麟之翼》《祈祷落幕时》.</span></span></li>
+          <li><strong>Ninth</strong> <span>Fahrenheit 451, Romeo and Juliet, Johnny Tremain.</span></li>
+          <li><strong>Tenth</strong> <span>The Alchemist, Siddhartha, The Metamorphosis, The Odyssey.</span></li>
+          <li><strong>Eleventh</strong> <span>Under a White Sky, The Autobiography of Frederick Douglass, Death on the Nile, Murder on the Orient Express, The Labours of Hercules, the first two Harry Potter books, the start of 1984, The Road to Serfdom.</span></li>
+          <li><strong>Twelfth</strong> <span>1984, Jane Eyre, Great Expectations, Death of a Salesman.</span></li>
+          <li><strong>College</strong> <span>Nexus, Yuval Noah Harari. Philosophical Investigations, Ludwig Wittgenstein.</span></li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="writers-title">
+        <h2 id="writers-title">Writers I go back to</h2>
+        <p class="writers">Nietzsche. Shakespeare. Schopenhauer. Wittgenstein.</p>
+      </section>
+
+      <section class="section" aria-labelledby="elsewhere-title">
+        <h2 id="elsewhere-title">Elsewhere</h2>
+        <ul class="link-row">
+          <li><a href="https://github.com/BobbY-24">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/guanjun-yan-71350a36a/">LinkedIn</a></li>
+          <li><a href="https://tn.milesplit.com/athletes/10983270-bob-yuan/articles">Cross-country</a></li>
+          <li><a href="https://www.youtube.com/@BobYan-xb3xb">YouTube</a></li>
+          <li><a href="https://www.instagram.com/bobyan.25/">Instagram</a></li>
+        </ul>
+        <p class="note">The cross-country record is listed under Bob Yuan.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bob G. Yan</span>
+      <span><a href="index.html">Work</a> · <a href="research.html">Research</a></span>
+    </footer>
+  </div>
+  <script src="js/theme.js"></script>
+</body>
+</html>

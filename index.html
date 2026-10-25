@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bob Yan</title>
+  <meta name="description" content="Bob Yan is an Industrial and Systems Engineering student at Georgia Tech. He studies how language models handle new words, and how to measure that carefully.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/">
+  <meta property="og:title" content="Bob Yan">
+  <meta property="og:description" content="Language models, new words, and the measurements that keep a claim honest.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobby-24.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Work</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening">
+        <div>
+          <p class="eyebrow">Georgia Institute of Technology · Atlanta</p>
+          <h1 class="mast">Bob Yan</h1>
+          <p class="lede">Language models, new words, and the measurements that keep a claim honest.</p>
+          <p>Industrial and Systems Engineering, with advanced studies in operations research and statistics, and a Computer Science minor on the Intelligence thread. Research assistant in the College of Computing, working with Professor Wei Xu on how language models understand emerging language. President’s Undergraduate Research Award, 2026.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Major</span> ISyE, operations research and statistics</li>
+          <li><span>Minor</span> Computer Science, Intelligence</li>
+          <li><span>Grade</span> 4.0</li>
+          <li><span>Now</span> Community terms, precision@k</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <ol class="timeline">
+          <li>
+            <div class="when"><strong>Fall 2026</strong> Current semester <span class="now">Now</span></div>
+            <div>
+              <h3>Community-term pipeline</h3>
+              <p>Agentic extraction of community terms, and a benchmark built around accuracy, recall, and precision@k.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>Summer 2026</strong> PURA</div>
+            <div>
+              <h3>Neologisms, from the literature to a dataset</h3>
+              <p>President’s Undergraduate Research Award in the School of Interactive Computing. CITI research training, a literature review and scoping pass, a taxonomy of neologisms, and dataset design. Mentored by Professor Wei Xu, with guidance from Jonathan Zheng and the research group.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>Aug 2025 – Feb 2026</strong> Annotation</div>
+            <div>
+              <h3>Data pipeline for framing and translation</h3>
+              <p>Collection and annotation for media framing, and for machine-translation quality under MQM.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>Aug 2025 – present</strong> Part-time · Atlanta</div>
+            <div>
+              <h3>Research assistant, College of Computing</h3>
+              <p>Data collection, cleaning, and preprocessing for evaluating large language models. The appointment is on-site and runs alongside the projects above.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>Aug 2025 – Dec 2025</strong> VIP · hybrid</div>
+            <div>
+              <h3>Premodern English, as a pipeline</h3>
+              <p>Undergraduate research in the Georgia Tech VIP program. Computational pipelines for digitized premodern English: tokenization, preprocessing, sentiment, and topic modeling with LDA and BERTopic.</p>
+            </div>
+          </li>
+          <li>
+            <div class="when"><strong>Aug 2024 – May 2025</strong> The Webb School</div>
+            <div>
+              <h3>Class president</h3>
+              <p>Senior-class meetings, school events, and the class’s voice in school-wide decisions. Tennessee.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bob Yan · College of Computing, Georgia Tech</span>
+      <span><a href="https://github.com/BobbY-24">GitHub</a> · <a href="https://www.linkedin.com/in/guanjun-yan-71350a36a/">LinkedIn</a></span>
+    </footer>
+  </div>
+  <script src="js/theme.js"></script>
+</body>
+</html>

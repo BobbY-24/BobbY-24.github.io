@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Bob Yan</title>
+  <meta name="description" content="Bob Yan’s research: interpretability of new-word learning, benchmarks for model tendencies, Quarry, LoRA neologisms, David, and multimodal LLM evaluation.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/research.html">
+  <meta property="og:title" content="Research — Bob Yan">
+  <meta property="og:description" content="Interpretability, benchmarks for tendencies, and four public projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobby-24.github.io/research.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h1>A word the training set never contained.</h1>
+          <p class="lede">Two questions organize the work. What changes inside a model when a new behavior appears, and which measurements can show a tendency without pretending a proxy is the truth.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="interests-title">
+        <h2 id="interests-title">Interests</h2>
+        <div class="interest-grid">
+          <article class="panel">
+            <h3>Interpretability</h3>
+            <p>How a behavior can sit in a very small set of parameters. The current testbeds freeze Qwen2.5 and train either one new token embedding or a LoRA adapter, then ask whether the change behaves like a word. Vocabulary neighbors, a logit lens, and activation patching are part of that check. A result on a 0.5B testbed is not a result about language models in general.</p>
+          </article>
+          <article class="panel">
+            <h3>Benchmarks for tendencies</h3>
+            <p>Measurement aimed at discovering tendencies, not only scoring a task that was already named. Accuracy, recall, and precision@k, with the claim kept inside the run. Lexical overlap is not semantic gold. A mock provider is not a model result. Where no adjudicated set exists, the write-up says so.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div class="project-list">
+          <article class="project" id="quarry">
+            <span class="index">01</span>
+            <h3>Quarry</h3>
+            <p>An agent-native tool for collecting terms, senses, and evidence spans that stay attached to their sources. Recipes cover neologisms, cultural vocabulary, and specialist jargon. Jobs can resume. Grounding is audited. Exports include CSV, JSONL, Parquet, and annotation files. Model-proposed meanings stay suggestions. Real extraction uses a key, a local model, or approved Georgia Tech compute, and the default connection is an offline rehearsal.</p>
+            <ul class="meta">
+              <li>Python 3.11–3.13</li>
+              <li>MCP</li>
+              <li>Dataset curation</li>
+              <li>MIT</li>
+            </ul>
+            <a class="repo" href="https://github.com/BobbY-24/quarry">github.com/BobbY-24/quarry</a>
+          </article>
+
+          <article class="project" id="lora">
+            <span class="index">02</span>
+            <h3>LoRA and one-token neologisms</h3>
+            <p>Two repositories ask how little of a frozen model has to move before a new behavior shows up. Both use Qwen2.5-0.5B-Instruct as a testbed. Neither treats that scale as a stand-in for larger models.</p>
+            <div class="pair">
+              <p><a href="https://github.com/BobbY-24/neologism-embedding-learning">Neologism embedding learning.</a> One new token, 896 trainable parameters, optimized with a DPO-style objective while the rest of Qwen stays frozen and checksummed. The full runs, a matched LoRA baseline, and the interpretability analyses were driven from Colab. A 1.5B within-family replication has been run. The 3B run and cross-family replication have not.</p>
+              <p><a href="https://github.com/BobbY-24/qwen-lora-finetuning">CommunityQwen.</a> LoRA fine-tuning on an Apple M3, so the model explains slang in context. It does not try to make the model speak in slang. About 1.08 million adapter parameters are trained, 0.22% of the model with adapters. Held-out scores are lexical and behavioral proxies. They do not establish semantic accuracy. Adapters stay local and are not in the repository.</p>
+            </div>
+            <ul class="meta">
+              <li>PyTorch</li>
+              <li>PEFT</li>
+              <li>Qwen2.5</li>
+              <li>Colab and Apple MPS</li>
+            </ul>
+          </article>
+
+          <article class="project" id="david">
+            <span class="index">03</span>
+            <h3>David</h3>
+            <p>A due-diligence desk for a customer, a vendor, or an acquisition, built in Cursor. The interface is Flutter. The job service is FastAPI, PostgreSQL, and Celery. A memo cites only evidence that run retrieved, and a negated phrase does not count as support. A thin margin holds the decision instead of guessing. David never pays, signs, orders, or contacts the other party. The shipped demo is synthetic and offline, with no model calls.</p>
+            <p class="note">Decision support only. It is not legal, credit, or investment advice.</p>
+            <ul class="meta">
+              <li>Flutter</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Celery</li>
+            </ul>
+            <a class="repo" href="https://github.com/BobbY-24/David">github.com/BobbY-24/David</a>
+          </article>
+
+          <article class="project" id="ablation">
+            <span class="index">04</span>
+            <h3>API ablation and multimodal loaders</h3>
+            <p>One repository, two instruments. The first compares extraction and judgment pipelines on 50 frozen web sources, half gaming and half cybersecurity, and keeps a separate runner for five evidence conditions: term only, usage text, an image, text plus image, and a distractor image. No live run of those five conditions has been made. The bundled items are fictional, and the default scorer is an offline mock whose scores are meaningless on purpose. Completed provider tables are aggregate ledgers. They are not an invoice, and they are not precision or recall: no gold set is claimed there.</p>
+            <p>The second instrument is nine offline loaders for game media — VPT, MineRL, CS:GO, Terraria, ProAct, StarCraft images, Slippi, Dota 2 visuals, and Age of Empires II — plus annotation scaffolding, episode preparation, and scoring. Demo scores check the plumbing. They are not a measure of a model, and they are not gameplay.</p>
+            <ul class="meta">
+              <li>Python 3.11+</li>
+              <li>OpenAI-compatible APIs</li>
+              <li>Gemini</li>
+              <li>Offline CV loaders</li>
+            </ul>
+            <a class="repo" href="https://github.com/BobbY-24/llm-eval-ablation-multimodal">github.com/BobbY-24/llm-eval-ablation-multimodal</a>
+          </article>
+        </div>
+
+        <div class="coursework">
+          <h3>Coursework, also public</h3>
+          <ul>
+            <li><a href="https://github.com/BobbY-24/Machine-Learning-Project">NCAA postseason classification</a> with k-nearest neighbors, a decision tree, an SVM, and logistic regression.</li>
+            <li><a href="https://github.com/BobbY-24/Neural-Network-from-Scratch-NumPy-Only">A two-layer network in NumPy</a> for MNIST-style digits, with tests and a written account of what it does not show.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Descriptions follow the public repositories. A number that is not in those repos is not on this page.</span>
+      <span><a href="https://github.com/BobbY-24">GitHub</a></span>
+    </footer>
+  </div>
+  <script src="js/theme.js"></script>
+</body>
+</html>
