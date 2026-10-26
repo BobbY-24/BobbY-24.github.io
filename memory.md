@@ -12,6 +12,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech ISyE, CS m
 - Twelfth-grade shelf entry “1948” is shown as 1984, because eleventh grade says he started 1984 and the digits match a swap. The about page says so.
 - LinkedIn link used: `https://www.linkedin.com/in/guanjun-yan-71350a36a/`. GitHub profile blog field also lists `bob-yan-71350a36a`; that alternate was not used.
 - Cross-country page is Milesplit under the name Bob Yuan.
+- `quotes.html` is a theme quotebook, modeled on the section-and-bracket layout of karthiksworld’s quotebook, not a copy of its lines. Themes: language, will, self, seeing. Authors are the four named on About. Wording is from named public-domain translations, plus one Anscombe sentence from Philosophical Investigations §43. The rose line keeps the 1599 quarto’s “word.” The compressed Schopenhauer line “cannot will what he wills” was left out because it is not his sentence.
 
 ## State
 

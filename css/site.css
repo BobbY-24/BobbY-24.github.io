@@ -416,6 +416,10 @@ h3 {
   letter-spacing: -0.03em;
 }
 
+.writers a {
+  color: inherit;
+}
+
 .link-row {
   display: flex;
   flex-wrap: wrap;
@@ -440,6 +444,91 @@ h3 {
   color: var(--faint);
 }
 
+.quote-open {
+  grid-template-columns: 1fr;
+  padding-bottom: 0.4rem;
+}
+
+.epigraph {
+  margin: 1.4rem 0 0;
+  padding: 0;
+  border: 0;
+  max-width: 28rem;
+}
+
+.epigraph p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+.epigraph footer {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.quote-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin-top: 1.6rem;
+}
+
+.quote-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  font-size: 0.92rem;
+}
+
+.quote-section {
+  scroll-margin-top: 4.5rem;
+}
+
+.quote-section h2 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.quotes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.quotes li {
+  padding: 1.15rem 0 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.quotes .line {
+  margin: 0;
+  max-width: 40rem;
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.quotes .who {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.colophon {
+  margin-top: 1.4rem;
+  max-width: 42rem;
+  color: var(--faint);
+  font-size: 0.88rem;
+}
+
 @media (max-width: 800px) {
   body::before {
     width: 6px;
@@ -451,6 +540,10 @@ h3 {
 
   .site-header {
     flex-wrap: wrap;
+  }
+
+  .site-nav {
+    gap: 0.75rem;
   }
 
   .opening,

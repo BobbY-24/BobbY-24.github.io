@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quotebook — Bob Yan</title>
+  <meta name="description" content="A quotebook of lines from Nietzsche, Shakespeare, Schopenhauer, and Wittgenstein, arranged by theme.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/quotes.html">
+  <meta property="og:title" content="quotebook — Bob Yan">
+  <meta property="og:description" content="Lines from Nietzsche, Shakespeare, Schopenhauer, and Wittgenstein.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobby-24.github.io/quotes.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="research.html">Research</a>
+        <a href="quotes.html" aria-current="page">Quotes</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening quote-open">
+        <div>
+          <p class="eyebrow">personal favorites</p>
+          <h1 class="mast">quotebook</h1>
+          <blockquote class="epigraph">
+            <p>The limits of my language mean the limits of my world.</p>
+            <footer>— Ludwig Wittgenstein, <cite>Tractatus Logico-Philosophicus</cite>, 5.6</footer>
+          </blockquote>
+          <nav class="quote-nav" aria-label="Themes">
+            <a href="#language">language</a>
+            <a href="#will">will</a>
+            <a href="#self">self</a>
+            <a href="#seeing">seeing</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section quote-section" id="language" aria-labelledby="language-title">
+        <h2 id="language-title">language</h2>
+        <ol class="quotes">
+          <li>
+            <p class="line">What’s in a name? That which we call a rose by any other word would smell as sweet.</p>
+            <p class="who">[William Shakespeare, <cite>Romeo and Juliet</cite>, 2.2]</p>
+          </li>
+          <li>
+            <p class="line">What can be said at all can be said clearly; and whereof one cannot speak thereof one must be silent.</p>
+            <p class="who">[Ludwig Wittgenstein, preface to the <cite>Tractatus</cite>]</p>
+          </li>
+          <li>
+            <p class="line">For a large class of cases—though not for all—in which we employ the word “meaning” it can be defined thus: the meaning of a word is its use in the language.</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Philosophical Investigations</cite>, §43]</p>
+          </li>
+          <li>
+            <p class="line">I am my world. (The microcosm.)</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Tractatus</cite>, 5.63]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section quote-section" id="will" aria-labelledby="will-title">
+        <h2 id="will-title">will</h2>
+        <ol class="quotes">
+          <li>
+            <p class="line">If a man knows the wherefore of his existence, then the manner of it can take care of itself. Man does not aspire to happiness; only the Englishman does that.</p>
+            <p class="who">[Friedrich Nietzsche, <cite>Twilight of the Idols</cite>, “Maxims and Missiles,” 12]</p>
+          </li>
+          <li>
+            <p class="line">From the military school of life.—That which does not kill me, makes me stronger.</p>
+            <p class="who">[Friedrich Nietzsche, <cite>Twilight of the Idols</cite>, “Maxims and Missiles,” 8]</p>
+          </li>
+          <li>
+            <p class="line">Unless suffering is the direct and immediate object of life, our existence must entirely fail of its aim.</p>
+            <p class="who">[Arthur Schopenhauer, “On the Sufferings of the World”]</p>
+          </li>
+          <li>
+            <p class="line">If good or bad willing changes the world, it can only change the limits of the world, not the facts; not the things that can be expressed in language.</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Tractatus</cite>, 6.43]</p>
+          </li>
+          <li>
+            <p class="line">The world of the happy is quite another than that of the unhappy.</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Tractatus</cite>, 6.43]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section quote-section" id="self" aria-labelledby="self-title">
+        <h2 id="self-title">self</h2>
+        <ol class="quotes">
+          <li>
+            <p class="line">This above all: to thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.</p>
+            <p class="who">[William Shakespeare, <cite>Hamlet</cite>, 1.3]</p>
+          </li>
+          <li>
+            <p class="line">The fault, dear Brutus, is not in our stars, but in ourselves, that we are underlings.</p>
+            <p class="who">[William Shakespeare, <cite>Julius Caesar</cite>, 1.2]</p>
+          </li>
+          <li>
+            <p class="line">Lord, we know what we are, but know not what we may be.</p>
+            <p class="who">[William Shakespeare, <cite>Hamlet</cite>, 4.5]</p>
+          </li>
+          <li>
+            <p class="line">There is nothing either good or bad, but thinking makes it so.</p>
+            <p class="who">[William Shakespeare, <cite>Hamlet</cite>, 2.2]</p>
+          </li>
+          <li>
+            <p class="line">We are such stuff as dreams are made on, and our little life is rounded with a sleep.</p>
+            <p class="who">[William Shakespeare, <cite>The Tempest</cite>, 4.1]</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section quote-section" id="seeing" aria-labelledby="seeing-title">
+        <h2 id="seeing-title">seeing</h2>
+        <ol class="quotes">
+          <li>
+            <p class="line">The world is my idea.</p>
+            <p class="who">[Arthur Schopenhauer, <cite>The World as Will and Idea</cite>, §1]</p>
+          </li>
+          <li>
+            <p class="line">Every man takes the limits of his own field of vision for the limits of the world. This is an error of the intellect as inevitable as that error of the eye which lets us fancy that on the horizon heaven and earth meet.</p>
+            <p class="who">[Arthur Schopenhauer, “Psychological Observations”]</p>
+          </li>
+          <li>
+            <p class="line">I distrust all systematisers, and avoid them. The will to a system, shows a lack of honesty.</p>
+            <p class="who">[Friedrich Nietzsche, <cite>Twilight of the Idols</cite>, “Maxims and Missiles,” 26]</p>
+          </li>
+          <li>
+            <p class="line">We feel that even if all possible scientific questions be answered, the problems of life have still not been touched at all.</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Tractatus</cite>, 6.52]</p>
+          </li>
+          <li>
+            <p class="line">Not how the world is, is the mystical, but that it is.</p>
+            <p class="who">[Ludwig Wittgenstein, <cite>Tractatus</cite>, 6.44]</p>
+          </li>
+        </ol>
+        <p class="colophon">Nietzsche is Anthony M. Ludovici’s 1911 <cite>Twilight of the Idols</cite>. Schopenhauer is T. Bailey Saunders, and, for the opening line, R. B. Haldane and J. Kemp. The <cite>Tractatus</cite> is C. K. Ogden’s 1922 translation. The rose line keeps the 1599 quarto’s “word.” The <cite>Investigations</cite> sentence is G. E. M. Anscombe’s translation of §43.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bob Yan · four writers, by theme</span>
+      <span><a href="about.html">About</a></span>
+    </footer>
+  </div>
+  <script src="js/theme.js"></script>
+</body>
+</html>
