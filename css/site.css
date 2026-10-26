@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
-  --bg: #f3fae1;
-  --bg-raise: rgba(255, 252, 232, 0.72);
+  --bg: #fff4c2;
+  --bg-raise: rgba(255, 248, 214, 0.78);
   --wash: #f7ed92;
   --accent: #fae17a;
   --ink: #1b1914;
@@ -21,8 +21,8 @@
   --bg-raise: #2a2a37;
   --wash: #363646;
   --accent: #e6c384;
-  --ink: #dcd7ba;
-  --muted: #c8c093;
+  --ink: #f2d08a;
+  --muted: #d4bc80;
   --faint: #957fb8;
   --line: #363646;
   --link: #7fb4ca;
