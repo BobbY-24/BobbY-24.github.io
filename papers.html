@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading list — Bob Yan</title>
+  <meta name="description" content="Bob Yan’s reading list: papers on evaluation past human language, mechanistic interpretability, and complicated tasks.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/papers.html">
+  <meta property="og:title" content="Reading list — Bob Yan">
+  <meta property="og:description" content="Papers on evaluation past human language, mechanistic interpretability, and complicated tasks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobby-24.github.io/papers.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="research.html">Research</a>
+        <a href="papers.html" aria-current="page">Papers</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening quote-open">
+        <div>
+          <p class="eyebrow">Reading</p>
+          <h1>Papers, by the question.</h1>
+          <p class="lede">The stack behind evaluation for intelligence that is not confined to human language. Each section is one question, then the papers that take it up. Safety here is more than one measure: what the model is doing on the inside, and whether a complicated task or scenario still holds.</p>
+          <nav class="quote-nav" aria-label="Topics">
+            <a href="#vocabulary">Vocabulary</a>
+            <a href="#provenance">Provenance</a>
+            <a href="#finance">Finance</a>
+            <a href="#wargames">Wargames</a>
+            <a href="#movement">Movement</a>
+            <a href="#mechanisms">Mechanisms</a>
+            <a href="#agents">Agents</a>
+            <a href="#coordination">Coordination</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="read-section" id="vocabulary" aria-labelledby="vocabulary-title">
+        <h2 id="vocabulary-title">Vocabulary and control</h2>
+        <p class="why">A model can hold a concept that ordinary words do not name. These papers treat that gap as a control problem: a new term, a learned neologism, an instruction the model was not tuned on, and a trace that may not say what the reward paid for.</p>
+        <p class="count">8 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Hewitt, Geirhos, and Kim</span>
+            <a href="https://proceedings.mlr.press/v267/hewitt25a.html">Position: We Can’t Understand AI Using our Existing Vocabulary</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Hewitt, Tafjord, Geirhos, and Kim</span>
+            <a href="https://arxiv.org/abs/2510.08506">Neologism Learning for Controllability and Self-Verbalization</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Kim, Hewitt, Nanda, Fiedel, and Tafjord</span>
+            <a href="https://arxiv.org/abs/2506.12152">Because we have LLMs, we Can and Should Pursue Agentic Interpretability</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Hewitt, Liu, Liang, and Manning</span>
+            <a href="https://arxiv.org/abs/2409.14254">Instruction Following without Instruction Tuning</a>
+            <span class="year">2024</span>
+          </li>
+          <li>
+            <span class="who">Ma and Hewitt</span>
+            <a href="https://arxiv.org/abs/2602.22193">Improving Parametric Knowledge Access in Reasoning Language Models</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Morgulis and Hewitt</span>
+            <a href="https://arxiv.org/abs/2604.25783">Subliminal Steering: Stronger Encoding of Hidden Signals</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Tianyi Lorena Yan and John Hewitt</span>
+            <a href="https://arxiv.org/abs/2610.28303">Reward Misspecification Degrades Chain-of-Thought Monitorability</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Wijaya et al.</span>
+            <a href="https://aclanthology.org/D17-1152/">Learning Translations via Matrix Completion</a>
+            <span class="year">2017</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="provenance" aria-labelledby="provenance-title">
+        <h2 id="provenance-title">Provenance, persona, and roles</h2>
+        <p class="why">Social behavior has a source, and a role can be a direction in the model rather than a line in the prompt. The question is whether that direction stays local, or leaks into the next client and the next decision.</p>
+        <p class="count">5 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2606.19625">Capability Provenance in Language Models: A Case Study in Social Reasoning</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Song et al.</span>
+            <a href="https://arxiv.org/abs/2608.00023">Role Steering of Language Models for Social Simulations</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Gupta, Krier, and Matlin</span>
+            <a href="https://arxiv.org/abs/2610.17365">When Goals Leak Across Relationships: How Cached Goal Representations Shape Cross-Client Decisions</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Okamoto, Erol, and Matlin</span>
+            <a href="https://arxiv.org/abs/2602.02386">Trust by Design: Skill Profiles for Transparent, Cost-Aware LLM Routing</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2508.15794">Do Language Models Agree with Human Perceptions of Suspense in Stories?</a>
+            <span class="year">2025</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="finance" aria-labelledby="finance-title">
+        <h2 id="finance-title">Finance language</h2>
+        <p class="why">A plausible sentence about markets is not a result. These benchmarks ask whether a model can do the financial task it was given.</p>
+        <p class="count">3 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://aclanthology.org/2025.findings-acl.1164/">Finance Language Model Evaluation (FLaME)</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2512.08965">Financial Instruction Following Evaluation (FIFE)</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2601.06747">FinForge: Semi-Synthetic Financial Benchmark Generation</a>
+            <span class="year">2026</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="wargames" aria-labelledby="wargames-title">
+        <h2 id="wargames-title">Wargames and strategic simulation</h2>
+        <p class="why">Other agents, incomplete information, and pressure. The evaluation is the situation. A single answer in ordinary language does not settle it.</p>
+        <p class="count">3 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2509.17192">Shall We Play a Game? Language Models for Open-ended Wargames</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Matlin et al.</span>
+            <a href="https://arxiv.org/abs/2608.01868">No One Wins in Nuclear War: A Social Simulation of Military Decision-making</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Riedl and Matlin</span>
+            <a href="https://arxiv.org/abs/2609.16189">Position: AI Is Not Ready for Strategic Conflicts</a>
+            <span class="year">2026</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="movement" aria-labelledby="movement-title">
+        <h2 id="movement-title">Neologisms, time, and stance</h2>
+        <p class="why">Language and the world both move. These papers test new words, a timeline that has changed, whether a record is still anonymous, and stance toward a claim across languages.</p>
+        <p class="count">5 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Zheng, Ritter, and Xu</span>
+            <a href="https://arxiv.org/abs/2402.12261">NEO-BENCH: Evaluating Robustness of Large Language Models with Neologisms</a>
+            <span class="year">2024</span>
+          </li>
+          <li>
+            <span class="who">Zheng et al.</span>
+            <a href="https://arxiv.org/abs/2609.00184">Synthetic Worlds for Temporal Evaluation and Knowledge Updating in LLMs</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Zheng, Das, Ritter, and Xu</span>
+            <a href="https://arxiv.org/abs/2503.09674">Probabilistic Reasoning with LLMs for k-anonymity Estimation</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Lavrouk et al.</span>
+            <a href="https://aclanthology.org/2024.wnut-1.4/">Stanceosaurus 2.0: Classifying Stance Towards Russian and Spanish Misinformation</a>
+            <span class="year">2024</span>
+          </li>
+          <li>
+            <span class="who">Zheng, Baheti, Naous, Xu, and Ritter</span>
+            <a href="https://aclanthology.org/2022.emnlp-main.138/">Stanceosaurus: Classifying Stance Towards Multicultural Misinformation</a>
+            <span class="year">2022</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="mechanisms" aria-labelledby="mechanisms-title">
+        <h2 id="mechanisms-title">Mechanistic interpretability and misalignment</h2>
+        <p class="why">Persona, emotion, and reward leave traces inside the model. These papers look for the direction, the feature, or the training step that carries the behavior, including when a narrow fine-tune changes the model well outside the task.</p>
+        <p class="count">5 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Chen et al.</span>
+            <a href="https://arxiv.org/abs/2507.21509">Persona Vectors: Monitoring and Controlling Character Traits in Language Models</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Betley et al.</span>
+            <a href="https://proceedings.mlr.press/v267/betley25a.html">Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Deng et al.</span>
+            <a href="https://arxiv.org/abs/2605.25189">Directional Alignment Mitigates Reward Hacking in Reinforcement Learning for Language Models</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Shu, Singh, and ElSherief</span>
+            <a href="https://aclanthology.org/2026.emnlp-main.559/">Why Are Some Emotions Harder for LLMs? Uncovering the Causal Mechanisms of Emotion Inference via Sparse Autoencoders</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Quirke et al.</span>
+            <a href="https://aclanthology.org/2026.emnlp-demos.56/">Bergson: An Open Source Library for Data Attribution</a>
+            <span class="year">2026</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="agents" aria-labelledby="agents-title">
+        <h2 id="agents-title">Finance agents and safety</h2>
+        <p class="why">Once the model can act, the failure can be an order, a tool call, or a strategy in a market. The evaluation moves from a financial question to an agent in an environment.</p>
+        <p class="count">4 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Chen et al.</span>
+            <a href="https://aclanthology.org/2021.emnlp-main.300/">FinQA: A Dataset of Numerical Reasoning over Financial Data</a>
+            <span class="year">2021</span>
+          </li>
+          <li>
+            <span class="who">Yang et al.</span>
+            <a href="https://arxiv.org/abs/2601.07853">FinVault: Benchmarking Financial Agent Safety in Execution-Grounded Environments</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Ding et al.</span>
+            <a href="https://arxiv.org/abs/2512.09506">Beyond Knowledge to Agency: Evaluating Expertise, Autonomy, and Integrity in Finance with CNFinBench</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Lei et al.</span>
+            <a href="https://arxiv.org/abs/2605.10059">Strategic Exploitation in LLM Agent Markets: A Simulation Framework for E-Commerce Trust</a>
+            <span class="year">2026</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="read-section" id="coordination" aria-labelledby="coordination-title">
+        <h2 id="coordination-title">Neologisms, languages, and coordination</h2>
+        <p class="why">Words and cultures a usual benchmark misses, and tasks whose difficulty is the order of the steps or the coordination of many agents.</p>
+        <p class="count">4 papers</p>
+        <ol class="papers">
+          <li>
+            <span class="who">Lee et al.</span>
+            <a href="https://aclanthology.org/2026.findings-emnlp.1802/">KoNeoBench: A Curated Evaluation Dataset for LLM Understanding of Korean Neologisms</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Naous et al.</span>
+            <a href="https://arxiv.org/abs/2510.05291">Camellia: Benchmarking Cultural Biases in LLMs for Asian Languages</a>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span class="who">Gao et al.</span>
+            <a href="https://aclanthology.org/2026.findings-emnlp.662/">SwarmBench: Can Large Language Models Act as Agent Swarm Orchestrators?</a>
+            <span class="year">2026</span>
+          </li>
+          <li>
+            <span class="who">Le, Guo, Xu, and Ritter</span>
+            <a href="https://aclanthology.org/2023.acl-long.561/">Improved Instruction Ordering in Recipe-Grounded Conversation</a>
+            <span class="year">2023</span>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bob Yan · College of Computing, Georgia Tech</span>
+      <span><a href="https://github.com/BobbY-24">GitHub</a> · <a href="https://www.linkedin.com/in/guanjun-yan-71350a36a/">LinkedIn</a></span>
+    </footer>
+  </div>
+  <script src="js/theme.js"></script>
+</body>
+</html>

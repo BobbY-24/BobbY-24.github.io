@@ -6,7 +6,8 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematic
 
 ## Decisions
 
-- Pages: work and timeline (`index.html`), research (`research.html`), quotebook (`quotes.html`), pictured shelf (`books.html`), about (`about.html`).
+- Pages: work and timeline (`index.html`), research (`research.html`), reading list (`papers.html`), quotebook (`quotes.html`), pictured shelf (`books.html`), about (`about.html`).
+- `papers.html`, added 2026-10-25, is a topic reading list in the section-and-stack shape of glennmatlin.doctor/reading-lists.html, written in this site’s voice. The three 2026 “John Hewitt” papers (Ma; Morgulis; Tianyi Lorena Yan) are the Columbia Hewitt, `jh5020`, the same person as the vocabulary and neologism papers; his homepage lists them. Learning Translations via Matrix Completion is EMNLP 2017, with Hewitt as a coauthor, not 2024. Reward Misspecification is Tianyi Lorena Yan, not Bob. Stanceosaurus’s published title is “Multicultural,” EMNLP 2022. Neologism Learning is listed as 2026 because Hewitt’s page gives it as ICLR 2026; the arXiv preprint is October 2025. Specialists or Generalists was left off at Bob’s request.
 - Default theme is the yellow paper palette. Night is Kanagawa, toggled in the header and stored in `localStorage` under `theme`.
 - Project copy is taken from the public READMEs of Quarry, neologism-embedding-learning, qwen-lora-finetuning, David, and llm-eval-ablation-multimodal, checked 2026-10-25. Coursework repos are listed separately.
 - Twelfth-grade shelf entry “1948” is shown as 1984, because eleventh grade says he started 1984 and the digits match a swap. The about page says so.
