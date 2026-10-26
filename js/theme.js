@@ -15,7 +15,7 @@
       button.textContent = night ? "Paper" : "Night";
       button.setAttribute("aria-pressed", night ? "true" : "false");
     }
-    if (themeColor) themeColor.setAttribute("content", night ? "#1F1F28" : "#FFF4C2");
+    if (themeColor) themeColor.setAttribute("content", night ? "#1F1F28" : "#FFF9E0");
   }
 
   if (button) {

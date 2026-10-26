@@ -15,6 +15,6 @@ Personal GitHub Pages site for Bob Yan: `https://bobby-24.github.io`. Static HTM
 
 - Do not add credentials, tokens, or the contents of private notes. The source Google Doc contained live secrets; they stay out of this repository.
 - Keep claims inside the public repositories and the facts Bob supplied. Do not invent metrics, quotes, or results.
-- Paper theme is the default: background `#FFF4C2`, wash `#f7ed92`, accent `#FAE17A`. Night keeps the Kanagawa ground; body text is gold `#F2D08A`.
+- Paper theme is the default: background `#FFF9E0`, wash `#f7ed92`, accent `#FAE17A`. Night keeps the Kanagawa ground; body text is gold `#F2D08A`.
 - `.nojekyll` is required so Markdown in this repo is not published as a page.
 - Scratch files go under `work/<task>/`, which is gitignored.
