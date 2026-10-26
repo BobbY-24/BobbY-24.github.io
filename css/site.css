@@ -529,6 +529,85 @@ h3 {
   font-size: 0.88rem;
 }
 
+.shelf-block {
+  margin-top: 2.4rem;
+}
+
+.shelf-block h2 {
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  gap: 0.9rem;
+}
+
+.book-item {
+  display: flex;
+  gap: 1rem;
+  min-height: 9.2rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--bg-raise);
+  color: inherit;
+  text-decoration: none;
+}
+
+a.book-item:hover {
+  border-color: var(--accent);
+}
+
+a.book-item:hover .book-title {
+  text-decoration: underline;
+}
+
+.book-cover {
+  flex: 0 0 5rem;
+  width: 5rem;
+  height: 7.5rem;
+  background: var(--wash);
+  overflow: hidden;
+}
+
+.book-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.book-title {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.book-author {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.book-year {
+  margin-top: auto;
+  padding-top: 0.45rem;
+  color: var(--faint);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
 @media (max-width: 800px) {
   body::before {
     width: 6px;

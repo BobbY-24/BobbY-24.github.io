@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || theme === "light") {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shelf — Bob Yan</title>
+  <meta name="description" content="The books on Bob Yan’s shelf, with a cover, author, and year beside each title.">
+  <meta name="theme-color" content="#F3FAE1">
+  <link rel="canonical" href="https://bobby-24.github.io/books.html">
+  <meta property="og:title" content="Shelf — Bob Yan">
+  <meta property="og:description" content="Covers for the books listed on the shelf.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bobby-24.github.io/books.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">Bob Yan</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="research.html">Research</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="books.html" aria-current="page">Books</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Night</button>
+    </header>
+
+    <main id="main">
+      <section class="opening quote-open">
+        <div>
+          <p class="eyebrow">the shelf</p>
+          <h1 class="mast">books</h1>
+          <p class="lede">Every title from the notes, in the order it was read. The year is the book’s, not the school year’s.</p>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="elementary-title">
+        <h2 id="elementary-title">Elementary</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://zh.wikipedia.org/wiki/%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE">
+            <div class="book-cover"><img src="images/covers/zhaohuaxishi.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">朝花夕拾</div>
+              <div class="book-author">Lu Xun</div>
+              <div class="book-year">1928</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="sixth-title">
+        <h2 id="sixth-title">Sixth grade</h2>
+        <div class="book-list">
+          <article class="book-item">
+            <div class="book-cover"></div>
+            <div class="book-info">
+              <div class="book-title">A Boy’s Life</div>
+              <div class="book-author">Title only in the notes</div>
+              <div class="book-year">—</div>
+            </div>
+          </article>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/The_Miracles_of_the_Namiya_General_Store">
+            <div class="book-cover"><img src="images/covers/namiya.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">解忧杂货店</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">2012</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://zh.wikipedia.org/wiki/%E6%94%BE%E5%AD%B8%E5%BE%8C_(%E5%B0%8F%E8%AA%AA)">
+            <div class="book-cover"><img src="images/covers/houkago.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">放学后</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">1985</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://openlibrary.org/search?q=Mei+li+de+xiong+qi+Higashino">
+            <div class="book-cover"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">美丽的凶器</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">1992</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://openlibrary.org/search?q=Sotsugyo+Higashino">
+            <div class="book-cover"><img src="images/covers/sotsugyo.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">毕业</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">1986</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://zh.wikipedia.org/wiki/%E9%BA%92%E9%BA%9F%E4%B9%8B%E7%BF%BC">
+            <div class="book-cover"><img src="images/covers/qilin.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">麒麟之翼</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">2011</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://zh.wikipedia.org/wiki/%E7%A5%88%E7%A5%B7%E8%90%BD%E5%B9%95%E6%97%B6">
+            <div class="book-cover"></div>
+            <div class="book-info">
+              <div class="book-title" lang="zh">祈祷落幕时</div>
+              <div class="book-author">Keigo Higashino</div>
+              <div class="book-year">2013</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="ninth-title">
+        <h2 id="ninth-title">Ninth</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Fahrenheit_451">
+            <div class="book-cover"><img src="images/covers/fahrenheit.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Fahrenheit 451</div>
+              <div class="book-author">Ray Bradbury</div>
+              <div class="book-year">1953</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Romeo_and_Juliet">
+            <div class="book-cover"><img src="images/covers/romeo.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Romeo and Juliet</div>
+              <div class="book-author">William Shakespeare</div>
+              <div class="book-year">1597</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Johnny_Tremain">
+            <div class="book-cover"><img src="images/covers/johnny.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Johnny Tremain</div>
+              <div class="book-author">Esther Forbes</div>
+              <div class="book-year">1943</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="tenth-title">
+        <h2 id="tenth-title">Tenth</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">
+            <div class="book-cover"><img src="images/covers/alchemist.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Alchemist</div>
+              <div class="book-author">Paulo Coelho</div>
+              <div class="book-year">1988</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Siddhartha_(novel)">
+            <div class="book-cover"><img src="images/covers/siddhartha.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Siddhartha</div>
+              <div class="book-author">Hermann Hesse</div>
+              <div class="book-year">1922</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/The_Metamorphosis">
+            <div class="book-cover"><img src="images/covers/metamorphosis.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Metamorphosis</div>
+              <div class="book-author">Franz Kafka</div>
+              <div class="book-year">1915</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Odyssey">
+            <div class="book-cover"><img src="images/covers/odyssey.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Odyssey</div>
+              <div class="book-author">Homer</div>
+              <div class="book-year">8th century BCE</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="eleventh-title">
+        <h2 id="eleventh-title">Eleventh</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Under_a_White_Sky">
+            <div class="book-cover"><img src="images/covers/white-sky.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Under a White Sky</div>
+              <div class="book-author">Elizabeth Kolbert</div>
+              <div class="book-year">2021</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Narrative_of_the_Life_of_Frederick_Douglass">
+            <div class="book-cover"><img src="images/covers/douglass.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Autobiography of Frederick Douglass</div>
+              <div class="book-author">Frederick Douglass</div>
+              <div class="book-year">1845</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Death_on_the_Nile">
+            <div class="book-cover"><img src="images/covers/nile.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Death on the Nile</div>
+              <div class="book-author">Agatha Christie</div>
+              <div class="book-year">1937</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Murder_on_the_Orient_Express">
+            <div class="book-cover"><img src="images/covers/orient.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Murder on the Orient Express</div>
+              <div class="book-author">Agatha Christie</div>
+              <div class="book-year">1934</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/The_Labours_of_Hercules">
+            <div class="book-cover"><img src="images/covers/hercules.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Labours of Hercules</div>
+              <div class="book-author">Agatha Christie</div>
+              <div class="book-year">1947</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone">
+            <div class="book-cover"><img src="images/covers/hp1.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Harry Potter and the Philosopher’s Stone</div>
+              <div class="book-author">J. K. Rowling</div>
+              <div class="book-year">1997</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Chamber_of_Secrets">
+            <div class="book-cover"><img src="images/covers/hp2.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Harry Potter and the Chamber of Secrets</div>
+              <div class="book-author">J. K. Rowling</div>
+              <div class="book-year">1998</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/The_Road_to_Serfdom">
+            <div class="book-cover"><img src="images/covers/serfdom.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">The Road to Serfdom</div>
+              <div class="book-author">F. A. Hayek</div>
+              <div class="book-year">1944</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="twelfth-title">
+        <h2 id="twelfth-title">Twelfth</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four">
+            <div class="book-cover"><img src="images/covers/1984.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">1984</div>
+              <div class="book-author">George Orwell</div>
+              <div class="book-year">1949</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Jane_Eyre">
+            <div class="book-cover"><img src="images/covers/jane.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Jane Eyre</div>
+              <div class="book-author">Charlotte Brontë</div>
+              <div class="book-year">1847</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Great_Expectations">
+            <div class="book-cover"><img src="images/covers/expectations.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Great Expectations</div>
+              <div class="book-author">Charles Dickens</div>
+              <div class="book-year">1861</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Death_of_a_Salesman">
+            <div class="book-cover"><img src="images/covers/salesman.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Death of a Salesman</div>
+              <div class="book-author">Arthur Miller</div>
+              <div class="book-year">1949</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="shelf-block" aria-labelledby="college-title">
+        <h2 id="college-title">College</h2>
+        <div class="book-list">
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Nexus:_A_Brief_History_of_Information_Networks_from_the_Stone_Age_to_AI">
+            <div class="book-cover"><img src="images/covers/nexus.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Nexus</div>
+              <div class="book-author">Yuval Noah Harari</div>
+              <div class="book-year">2024</div>
+            </div>
+          </a>
+          <a class="book-item" href="https://en.wikipedia.org/wiki/Philosophical_Investigations">
+            <div class="book-cover"><img src="images/covers/investigations.jpg" alt="" width="80" height="120" loading="lazy"></div>
+            <div class="book-info">
+              <div class="book-title">Philosophical Investigations</div>
+              <div class="book-author">Ludwig Wittgenstein</div>
+              <div class="book-year">1953</div>
+            </div>
+          </a>
+        </div>
+        <p class="colophon">Covers come from Open Library. Three cards have no picture: <span lang="zh">美丽的凶器</span>, <span lang="zh">祈祷落幕时</span>, and A Boy’s Life. The notes do not name an author for that last title. <span lang="zh">加贺恭一郎</span> is the series name for <span lang="zh">毕业</span>, <span lang="zh">麒麟之翼</span>, and <span lang="zh">祈祷落幕时</span>. 1984 is listed once, with the twelfth-grade books.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Bob Yan · the shelf</span>
+      <span><a href="about.html">About</a></span>
+    </footer>
+  </div>
+  <script>
+    document.querySelectorAll(".book-cover img").forEach(function (img) {
+      img.addEventListener("error", function () { img.remove(); });
+    });
+  </script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

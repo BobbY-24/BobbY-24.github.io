@@ -6,13 +6,14 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech ISyE, CS m
 
 ## Decisions
 
-- Three pages, as specified: work and timeline (`index.html`), research and projects (`research.html`), about (`about.html`).
+- Pages: work and timeline (`index.html`), research (`research.html`), quotebook (`quotes.html`), pictured shelf (`books.html`), about (`about.html`).
 - Default theme is the yellow paper palette. Night is Kanagawa, toggled in the header and stored in `localStorage` under `theme`.
 - Project copy is taken from the public READMEs of Quarry, neologism-embedding-learning, qwen-lora-finetuning, David, and llm-eval-ablation-multimodal, checked 2026-10-25. Coursework repos are listed separately.
 - Twelfth-grade shelf entry “1948” is shown as 1984, because eleventh grade says he started 1984 and the digits match a swap. The about page says so.
 - LinkedIn link used: `https://www.linkedin.com/in/guanjun-yan-71350a36a/`. GitHub profile blog field also lists `bob-yan-71350a36a`; that alternate was not used.
 - Cross-country page is Milesplit under the name Bob Yuan.
 - `quotes.html` is a theme quotebook, modeled on the section-and-bracket layout of karthiksworld’s quotebook, not a copy of its lines. Themes: language, will, self, seeing. Authors are the four named on About. Wording is from named public-domain translations, plus one Anscombe sentence from Philosophical Investigations §43. The rose line keeps the 1599 quarto’s “word.” The compressed Schopenhauer line “cannot will what he wills” was left out because it is not his sentence.
+- `books.html` lists every shelf title as a cover card, grouped by when it was read (elementary through college). The layout follows the ivy-he cover cards, not the A–D tiers. The year is the book’s first publication year. Covers are local JPEGs saved from Open Library (`images/covers/`); hotlinking a full page of covers was dropped after parallel requests left later images blank. Three cards stay blank: 美丽的凶器 and 祈祷落幕时 had no usable cover (one candidate was an interior page, another an audiobook), and A Boy’s Life has no author in the notes. 1984 appears once, under twelfth grade. 加贺恭一郎 is the series name for 毕业, 麒麟之翼, and 祈祷落幕时.
 
 ## State
 
