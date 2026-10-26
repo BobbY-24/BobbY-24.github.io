@@ -17,7 +17,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech ISyE, CS m
 
 ## State
 
-- Repository `BobbY-24/BobbY-24.github.io` is the site. Pages serves `main` from `/`. Live URL verified 2026-10-25: `https://bobby-24.github.io`.
+- Repository `BobbY-24/BobbY-24.github.io` is the site. Pages serves `main` from `/`. Live URL verified 2026-10-25: `https://bobby-24.github.io`, including `https://bobby-24.github.io/books.html`.
 - The source notes included credential-like strings. They were not copied into this repository and must not be added later.
 
 ## Unresolved
