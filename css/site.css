@@ -736,6 +736,42 @@ a.book-item:hover .book-title {
   }
 }
 
+.life-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.life-photos figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.life-photos img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: var(--wash);
+  border: 1px solid var(--line);
+}
+
+.life-photos figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (min-width: 640px) {
+  .life-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem 1.1rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
