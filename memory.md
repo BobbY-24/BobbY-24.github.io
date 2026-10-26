@@ -14,6 +14,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematic
 - Twelfth grade also includes The Awakening (Kate Chopin, 1899) and The Great Gatsby (F. Scott Fitzgerald, 1925). “The awakenings” was read as Chopin’s novel, the twelfth-grade book, not Oliver Sacks’s Awakenings.
 - 背影 by 朱自清 is on the elementary shelf, with 朝花夕拾, not under college. Year 1928.
 - Public pages do not explain editorial choices. Folder names, missing-author notes, source caveats, and the Milesplit name mismatch stay out of the HTML.
+- GPA is not shown. Removed from About and the work-page facts at Bob’s request, 2026-10-25.
 - LinkedIn link used: `https://www.linkedin.com/in/guanjun-yan-71350a36a/`. GitHub profile blog field also lists `bob-yan-71350a36a`; that alternate was not used.
 - Cross-country page is Milesplit under the name Bob Yuan.
 - `quotes.html` is a theme quotebook, modeled on the section-and-bracket layout of karthiksworld’s quotebook, not a copy of its lines. Themes: language, will, self, seeing. Authors are the four named on About. Wording is from named public-domain translations, plus one Anscombe sentence from Philosophical Investigations §43. The rose line keeps the 1599 quarto’s “word.” The compressed Schopenhauer line “cannot will what he wills” was left out because it is not his sentence.
