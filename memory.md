@@ -10,6 +10,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech ISyE, CS m
 - Default theme is the yellow paper palette. Night is Kanagawa, toggled in the header and stored in `localStorage` under `theme`.
 - Project copy is taken from the public READMEs of Quarry, neologism-embedding-learning, qwen-lora-finetuning, David, and llm-eval-ablation-multimodal, checked 2026-10-25. Coursework repos are listed separately.
 - Twelfth-grade shelf entry “1948” is shown as 1984, because eleventh grade says he started 1984 and the digits match a swap. The about page says so.
+- Twelfth grade also includes The Awakening (Kate Chopin, 1899) and The Great Gatsby (F. Scott Fitzgerald, 1925). “The awakenings” was read as Chopin’s novel, the twelfth-grade book, not Oliver Sacks’s Awakenings.
 - LinkedIn link used: `https://www.linkedin.com/in/guanjun-yan-71350a36a/`. GitHub profile blog field also lists `bob-yan-71350a36a`; that alternate was not used.
 - Cross-country page is Milesplit under the name Bob Yuan.
 - `quotes.html` is a theme quotebook, modeled on the section-and-bracket layout of karthiksworld’s quotebook, not a copy of its lines. Themes: language, will, self, seeing. Authors are the four named on About. Wording is from named public-domain translations, plus one Anscombe sentence from Philosophical Investigations §43. The rose line keeps the 1599 quarto’s “word.” The compressed Schopenhauer line “cannot will what he wills” was left out because it is not his sentence.
