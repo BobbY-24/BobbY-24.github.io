@@ -14,11 +14,11 @@
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research — Bob Yan</title>
-  <meta name="description" content="Bob Yan’s research: interpretability of new-word learning, benchmarks for model tendencies, Quarry, LoRA neologisms, David, and multimodal LLM evaluation.">
+  <meta name="description" content="Bob Yan’s research: evaluations for superintelligence beyond human language, through mechanistic interpretability and complicated tasks and scenarios.">
   <meta name="theme-color" content="#F3FAE1">
   <link rel="canonical" href="https://bobby-24.github.io/research.html">
   <meta property="og:title" content="Research — Bob Yan">
-  <meta property="og:description" content="Interpretability, benchmarks for tendencies, and four public projects.">
+  <meta property="og:description" content="Safety evaluation beyond human language, through more than one measure.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bobby-24.github.io/research.html">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -46,8 +46,8 @@
       <section class="opening">
         <div>
           <p class="eyebrow">Research</p>
-          <h1>A word the training set never contained.</h1>
-          <p class="lede">Two questions organize the work. What changes inside a model when a new behavior appears, and which measurements can show a tendency without pretending a proxy is the truth.</p>
+          <h1>Evaluations past human language.</h1>
+          <p class="lede">The aim is to evaluate superintelligence that is not confined to human language, and to check safety through more than one measure. The projects below are the public work so far.</p>
         </div>
       </section>
 
@@ -55,12 +55,12 @@
         <h2 id="interests-title">Interests</h2>
         <div class="interest-grid">
           <article class="panel">
-            <h3>Interpretability</h3>
-            <p>How a behavior can sit in a very small set of parameters. The current testbeds freeze Qwen2.5 and train either one new token embedding or a LoRA adapter, then ask whether the change behaves like a word. Vocabulary neighbors, a logit lens, and activation patching are part of that check. A result on a 0.5B testbed is not a result about language models in general.</p>
+            <h3>Mechanistic interpretability</h3>
+            <p>One measure reads behavior from the inside of a system, not only from what it says. The public testbeds so far freeze Qwen2.5 and train either one new token embedding or a LoRA adapter, then ask whether the change behaves like a word. A result on a 0.5B testbed is not a result about superintelligence.</p>
           </article>
           <article class="panel">
-            <h3>Benchmarks for tendencies</h3>
-            <p>Measurement aimed at discovering tendencies, not only scoring a task that was already named. Accuracy, recall, and precision@k, with the claim kept inside the run. Lexical overlap is not semantic gold. A mock provider is not a model result. Where no adjudicated set exists, the write-up says so.</p>
+            <h3>Complicated tasks and scenarios</h3>
+            <p>The other measure is evaluation built from tasks and situations that are too involved to settle with a single answer in ordinary language. Accuracy, recall, and precision@k stay inside the run that produced them. A mock provider is not a model result.</p>
           </article>
         </div>
       </section>

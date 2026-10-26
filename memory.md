@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech ISyE, CS minor on the Intelligence thread, research assistant in the College of Computing.
+Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematics and Computing, concentration in Intelligence, research assistant in the College of Computing. Current research interest, stated 2026-10-25: evaluations for superintelligence beyond human language, with safety checked through mechanistic interpretability and through complicated tasks and scenarios. Earlier ISyE and CS-minor wording is superseded.
 
 ## Decisions
 
