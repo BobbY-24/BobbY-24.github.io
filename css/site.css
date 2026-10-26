@@ -220,11 +220,12 @@ h3 {
   background: var(--bg-raise);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  container-type: inline-size;
 }
 
 .facts li {
   display: grid;
-  grid-template-columns: 5.6rem 1fr;
+  grid-template-columns: 9.2rem 1fr;
   gap: 0.6rem;
   padding: 0.45rem 0;
   border-top: 1px solid var(--line);
@@ -239,6 +240,13 @@ h3 {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@container (max-width: 20rem) {
+  .facts li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
 }
 
 .section {
