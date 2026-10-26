@@ -540,6 +540,16 @@ h3 {
   font-size: clamp(1.6rem, 3vw, 2.1rem);
 }
 
+.shelf-label {
+  margin: 1.8rem 0 0.75rem;
+  color: var(--kicker);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 560;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .book-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
