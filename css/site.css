@@ -162,6 +162,37 @@ a:hover {
   padding: 3.2rem 0 2.4rem;
 }
 
+.opening.with-visit {
+  align-items: start;
+}
+
+.opening-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  min-width: 0;
+}
+
+.visit {
+  margin: 0;
+  min-width: 0;
+}
+
+.visit img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: var(--wash);
+  border: 1px solid var(--line);
+}
+
+.visit figcaption {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .eyebrow,
 .kicker {
   margin: 0 0 0.7rem;
