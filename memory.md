@@ -20,6 +20,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematic
 - Public pages do not explain editorial choices. Folder names, missing-author notes, source caveats, and the Milesplit name mismatch stay out of the HTML.
 - GPA is not shown. Removed from About and the work-page facts at Bob’s request, 2026-10-25.
 - The work-page facts label is Concentration, not Focus, as of 2026-10-25. The label column is 9.2rem so the uppercase word stays on one line.
+- The facts label under Concentration is Current interest, not Now, as of 2026-10-27.
 - LinkedIn link used: `https://www.linkedin.com/in/guanjun-yan-71350a36a/`. GitHub profile blog field also lists `bob-yan-71350a36a`; that alternate was not used.
 - Cross-country page is Milesplit under the name Bob Yuan.
 - `quotes.html` is a theme quotebook, modeled on the section-and-bracket layout of karthiksworld’s quotebook, not a copy of its lines. Themes: language, will, self, seeing. Authors are Nietzsche, Shakespeare, Schopenhauer, and Wittgenstein. Wording is from named public-domain translations, plus one Anscombe sentence from Philosophical Investigations §43. The rose line keeps the 1599 quarto’s “word.” The compressed Schopenhauer line “cannot will what he wills” was left out because it is not his sentence.
