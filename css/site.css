@@ -770,10 +770,14 @@ a.book-item:hover .book-title {
 .life-photos {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin: 0;
+  gap: 2.5rem;
+  margin: 0.6rem 0 0;
   padding: 0;
   list-style: none;
+}
+
+.life-photos li {
+  min-width: 0;
 }
 
 .life-photos figure {
@@ -791,15 +795,34 @@ a.book-item:hover .book-title {
 }
 
 .life-photos figcaption {
-  margin-top: 0.45rem;
+  margin-top: 0.75rem;
   color: var(--muted);
   font-size: 0.92rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 720px) {
   .life-photos {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.6rem 1.1rem;
+    display: block;
+    columns: 2;
+    column-gap: 2.25rem;
+  }
+
+  .life-photos li {
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 2.25rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .life-photos {
+    columns: 3;
+    column-gap: 1.75rem;
+  }
+
+  .life-photos li {
+    margin-bottom: 1.75rem;
   }
 }
 
