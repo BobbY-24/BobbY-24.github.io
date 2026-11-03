@@ -8,7 +8,7 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematic
 
 - Pages: work and timeline (`index.html`), research (`research.html`), reading list (`papers.html`), quotebook (`quotes.html`), pictured shelf (`books.html`), about (`about.html`).
 - About, as of 2026-10-25, is only life outside the work: exercise, the gym, running, guitar, frisbee, and cooking, plus GitHub, LinkedIn, cross-country, YouTube, and Instagram. School, the shelf summary, and the writers line were taken off About. Do not invent details for those activities. Books and quotes stay on their own pages.
-- About photos are local JPEGs in `images/life/`. Labels are place and year only. Do not name anyone else in the pictures. The order in the next bullet replaced the earlier earliest-year-first order.
+- About photos are local JPEGs in `images/life/`. Labels are place and year, except the Nashville cross-country photo, which Bob renamed on 2026-11-03 to “XC Regional, Nashville, 2023” (file stays `images/life/nashville-tennessee-2023.jpg`). Do not name anyone else in the pictures. The order in the next bullet replaced the earlier earliest-year-first order.
 - The sunset Atlanta 2026 photo was removed on 2026-10-27; the remaining three-person Atlanta photo is labeled Atlanta, 2026 and is first in the About gallery. Stanford, 2021 (`images/life/stanford-2021.jpg`) follows it; the other person in that photo is not named. Blazer Day, 2024 (`images/life/blazer-day-2024.jpg`) comes after Long Branch Beach, 2024. No city was added to that caption. San Francisco, 2022 stays on the first page only. As of 2026-10-28, from 720px up the photos share one height per row and keep their own widths, so a short landscape shot does not leave a hole beside a taller portrait. Phones stay one full-width column. Atlanta, 2026 stays first.
 - San Francisco, 2022 is on the first page (`index.html`), not in the About gallery.
 - Nav label is Readings, not Papers, as of 2026-10-26. The page file remains papers.html.
@@ -34,6 +34,11 @@ Public research site for Bob G. Yan (GitHub `BobbY-24`), Georgia Tech Mathematic
 
 - Repository `BobbY-24/BobbY-24.github.io` is the site. Pages serves `main` from `/`. Live URL verified 2026-10-26: `https://bobby-24.github.io`, including `https://bobby-24.github.io/books.html` and `https://bobby-24.github.io/about.html`. Shelf covers and About photos were published by merging PR #1 (`2aa450c`) into `main`. A Boy’s Life stays a blank card.
 - The source notes included credential-like strings. They were not copied into this repository and must not be added later.
+
+## Review
+
+- 2026-11-03: Compared with senior personal sites (Lovin, Robinson, Osmani, Archibald, Abramov, Argyle, Dinculescu, Freiberg, Kowalski, Byron, Olah, Choi, Merewood, Cheng Lou). Bob rejected the experiment the same day. Keep the paper design in this repository. Do not port the lab’s project index, scrubber, search, citation copy, photo dialog, view transitions, or OS-theme behavior unless he asks.
+- The rejected copy, `BobbY-24/bob-yan-lab`, was deleted on 2026-11-03 at Bob’s request. Do not recreate it unless he asks.
 
 ## Unresolved
 
